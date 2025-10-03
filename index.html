@@ -3,14 +3,146 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Smoke Test – 83 Spaulding</title>
-  <link rel="stylesheet" href="styles.css?v=fix1" />
+  <title>83 Spaulding – Luxury Student Rental</title>
+  <meta name="description" content="Luxury student residence near UMass Amherst with hotel-grade amenities and designer interiors." />
+  <link rel="stylesheet" href="styles.css?v=luxury" />
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="83 Spaulding home">83 Spaulding</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">☰</button>
+      <ul id="nav-menu" class="nav-list">
+        <li><a href="#residence">Residence</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#inquire" class="cta">Inquire</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main id="main">
-    <h1 id="smoketest">HTML is working</h1>
-    <p>If this is a big H1 (not “# …”), the page is now real HTML.</p>
+    <section id="top" class="hero reveal" aria-label="Hero">
+      <div class="hero-media" role="img" aria-label="Serene modern interior with warm lighting"></div>
+      <div class="hero-content">
+        <h1>Quiet Luxury, Steps from Campus</h1>
+        <p>Refined living for focused minds—meticulous finishes, intuitive tech, and hotel-grade comfort in Amherst.</p>
+        <div class="hero-actions">
+          <a href="#inquire" class="btn primary">Schedule a Tour</a>
+          <a href="#gallery" class="btn ghost">View Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="residence" class="section reveal" aria-labelledby="residence-title">
+      <div class="section-head">
+        <h2 id="residence-title">The Residence</h2>
+        <p>Purpose-built for productivity and calm. Thoughtful spatial flow, premium materials, and soft acoustics.</p>
+      </div>
+      <div class="grid features">
+        <article class="card">
+          <h3>Design</h3>
+          <p>Oak textures, matte black hardware, 3000K lighting, and low-gloss mineral walls for a distraction-free feel.</p>
+        </article>
+        <article class="card">
+          <h3>Performance</h3>
+          <p>Efficient climate control, quiet appliances, and insulated glazing for year-round comfort.</p>
+        </article>
+        <article class="card">
+          <h3>Smart Access</h3>
+          <p>Keyless entry, privacy-first sensors, and fast Wi-Fi coverage across every room.</p>
+        </article>
+        <article class="card">
+          <h3>Peace of Mind</h3>
+          <p>On-call maintenance, secure parcel space, and optional cleaning service.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="amenities" class="section reveal" aria-labelledby="amenities-title">
+      <div class="section-head">
+        <h2 id="amenities-title">Amenities</h2>
+        <p>Curated essentials—no clutter. Everything supports study, rest, and life admin.</p>
+      </div>
+      <ul class="amenity-list">
+        <li>Designer kitchen with induction & dishwasher</li>
+        <li>In-unit laundry</li>
+        <li>Premium bath fixtures</li>
+        <li>Dedicated study nooks</li>
+        <li>Off-street parking</li>
+        <li>Secure bike storage</li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="section reveal" aria-labelledby="gallery-title">
+      <div class="section-head">
+        <h2 id="gallery-title">Gallery</h2>
+        <p>Materials, light, and balance.</p>
+      </div>
+      <div class="grid gallery">
+        <figure class="ph" aria-label="Warm living room"><img src="img/interior-1.jpg" alt="Living room with oak finishes and soft lighting" /></figure>
+        <figure class="ph" aria-label="Minimal kitchen"><img src="img/interior-2.jpg" alt="Minimal kitchen with matte black fixtures" /></figure>
+        <figure class="ph" aria-label="Bedroom"><img src="img/interior-3.jpg" alt="Bedroom with layered textiles and diffuse light" /></figure>
+        <figure class="ph" aria-label="Bathroom"><img src="img/interior-4.jpg" alt="Bathroom with premium fixtures and stone vanity" /></figure>
+      </div>
+    </section>
+
+    <section id="location" class="section reveal" aria-labelledby="location-title">
+      <div class="section-head">
+        <h2 id="location-title">Location</h2>
+        <p>Amherst, Massachusetts. Walkable, studious, connected.</p>
+      </div>
+      <div class="location-card">
+        <div class="location-copy">
+          <ul>
+            <li>UMass Amherst – 5 min drive</li>
+            <li>Downtown Amherst – 6 min drive</li>
+            <li>Groceries & cafés – 3–7 min</li>
+          </ul>
+        </div>
+        <div class="map-wrap" aria-hidden="true">
+          <iframe title="Map of 83 Spaulding St Amherst MA" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=83%20Spaulding%20St%20Amherst%20MA&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="inquire" class="section reveal" aria-labelledby="inquire-title">
+      <div class="section-head">
+        <h2 id="inquire-title">Inquire</h2>
+        <p>Tell us a bit about you. We’ll follow up with availability and next steps.</p>
+      </div>
+      <form class="form" name="inquiry" method="post" data-netlify="true">
+        <input type="hidden" name="form-name" value="inquiry" />
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </div>
+        <div class="field">
+          <label for="movein">Target move-in</label>
+          <input id="movein" name="movein" type="month" />
+        </div>
+        <div class="field full">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us your program, roommates, and budget."></textarea>
+        </div>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send inquiry</button>
+          <p class="fine">By sending, you consent to contact about availability and terms.</p>
+        </div>
+      </form>
+    </section>
   </main>
-  <script src="script.js?v=fix1" defer></script>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© <span id="year"></span> 83 Spaulding · Amherst, MA · <a href="mailto:leasing@83spaulding.com">leasing@83spaulding.com</a></p>
+  </footer>
+
+  <script src="script.js?v=luxury" defer></script>
 </body>
 </html>
