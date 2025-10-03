@@ -8,10 +8,10 @@
 </head>
 <body>
     <header class="site-header">
-        <nav class="site-nav">
+        <nav class="site-nav container">
             <a class="site-logo" href="index.html">83 Spaulding St</a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
+                <a class="active" href="index.html">Home</a>
                 <a href="features.html">Features</a>
                 <a href="contact.html">Inquire</a>
             </div>
@@ -19,52 +19,121 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <p class="eyebrow">Luxury Student Rental</p>
-                <h1>Live steps from UMass Amherst.</h1>
-                <p class="lead">Spacious, modern, and designed for comfort — 83 Spaulding Street is the perfect off-campus home for you and your housemates.</p>
-                <div class="hero-actions">
-                    <a class="button primary" href="contact.html">Schedule a tour</a>
-                    <a class="button secondary" href="features.html">See amenities</a>
+        <section class="section hero-section" data-animate>
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="tag">Luxury Student Rental</p>
+                    <h1>Live boldly just moments from campus.</h1>
+                    <p class="lead">A five-bedroom retreat crafted for focus, collaboration, and recharge. Discover a home that feels as considered as your ambitions.</p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="contact.html">Schedule a private tour</a>
+                        <a class="button ghost" href="features.html">Explore the residence</a>
+                    </div>
+                    <div class="hero-footnote">
+                        <span>Flexible leases · Designer interiors · Concierge-level upkeep</span>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-device">
+                        <div class="hero-device__media" role="presentation" aria-hidden="true"></div>
+                        <div class="hero-device__badge">5 bedrooms · 2.5 baths · Off-street parking</div>
+                    </div>
+                    <div class="hero-glow hero-glow--one"></div>
+                    <div class="hero-glow hero-glow--two"></div>
                 </div>
             </div>
-            <div class="hero-image" role="presentation" aria-hidden="true"></div>
         </section>
 
-        <section class="highlights">
-            <h2>Why residents love 83 Spaulding</h2>
-            <div class="highlight-grid">
-                <article>
-                    <h3>Room for everyone</h3>
-                    <p>Five generous bedrooms, 2.5 bathrooms, and common areas that make it easy to live, study, and relax together.</p>
-                </article>
-                <article>
-                    <h3>Modern conveniences</h3>
-                    <p>Updated kitchen, in-unit laundry, fast Wi-Fi readiness, and energy-efficient systems keep day-to-day living simple.</p>
-                </article>
-                <article>
-                    <h3>Location advantage</h3>
-                    <p>Minutes to campus, dining, and downtown Amherst. Off-street parking and bike storage mean you can get around your way.</p>
-                </article>
+        <section class="section highlight-section" data-animate>
+            <div class="container narrow">
+                <h2 class="section-title">A thoughtful blend of sophistication and comfort.</h2>
+                <p class="section-subtitle">Every space inside 83 Spaulding Street is curated to feel calm, contemporary, and distinctly yours.</p>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Immersive living</h3>
+                        <p>Open-concept living with mindful lighting and premium finishes creates a cinematic setting for work and downtime.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Effortless tech</h3>
+                        <p>Smart climate control, high-speed connectivity, and integrated security keep life running seamlessly in the background.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Wellness-first</h3>
+                        <p>Sun-lit bedrooms, spa-inspired bathrooms, and fresh air circulation deliver balance beyond the lecture hall.</p>
+                    </article>
+                </div>
+                <div class="stats" data-animate style="--delay: 0.15s;">
+                    <div>
+                        <span class="stat">4 min</span>
+                        <span class="label">Bike to UMass</span>
+                    </div>
+                    <div>
+                        <span class="stat">2 levels</span>
+                        <span class="label">Zoned for privacy</span>
+                    </div>
+                    <div>
+                        <span class="stat">24/7</span>
+                        <span class="label">Local maintenance</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="cta">
-            <div class="cta-card">
-                <h2>Ready to make it yours?</h2>
-                <p>Tell us about your group and ideal move-in date — we’ll follow up with availability, pricing, and next steps.</p>
-                <a class="button primary" href="contact.html">Contact the owner</a>
+        <section class="section split-section" data-animate>
+            <div class="container split-grid">
+                <div class="split-copy">
+                    <p class="tag">Spaces that flex with you</p>
+                    <h2>Gather, ideate, and unwind without compromise.</h2>
+                    <p>Dedicated zones for collaboration, movie nights, and study sessions flow intuitively from one to the next. Glassy surfaces, acoustic treatments, and signature lighting elevate the everyday.</p>
+                    <ul class="list">
+                        <li>Chef’s kitchen with waterfall island and integrated dining</li>
+                        <li>Sound-tuned living room with media wall</li>
+                        <li>Private outdoor terrace framed in evergreen landscaping</li>
+                    </ul>
+                    <a class="button text" href="features.html">See the full feature list &rarr;</a>
+                </div>
+                <div class="split-media">
+                    <div class="media-stack">
+                        <div class="media-card media-card--primary"></div>
+                        <div class="media-card media-card--secondary"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section lifestyle-section" data-animate>
+            <div class="container lifestyle-grid">
+                <div class="lifestyle-card">
+                    <h3>Designed around your rhythm</h3>
+                    <p>Morning classes, late-night labs, weekend downtime — the residence adapts with programmable lighting scenes, climate zones, and curated storage.</p>
+                </div>
+                <div class="lifestyle-card">
+                    <h3>Stay connected to Amherst life</h3>
+                    <p>Moments from cafés, local markets, and the energy of downtown Amherst. Return to a sanctuary that balances proximity with retreat.</p>
+                </div>
+                <div class="lifestyle-card">
+                    <h3>Sustainably minded</h3>
+                    <p>Energy-efficient systems, smart thermostats, and low-maintenance landscaping mean lighter footprints without sacrificing comfort.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-section" data-animate>
+            <div class="container cta-card">
+                <div>
+                    <p class="tag">Tour the property</p>
+                    <h2>Experience 83 Spaulding Street in person.</h2>
+                    <p>Secure your preferred move-in date and see how the home supports your vision for the year ahead.</p>
+                </div>
+                <a class="button primary" href="contact.html">Book a walkthrough</a>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>&copy; <span id="current-year"></span> 83 Spaulding St. All rights reserved.</p>
+        <p>&copy; <span id="current-year"></span> 83 Spaulding St. Crafted for modern student living.</p>
     </footer>
 
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+    <script src="static/js/site.js"></script>
 </body>
 </html>
