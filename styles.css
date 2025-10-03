@@ -306,9 +306,10 @@ body[data-page="inquire"] .nav-links a[data-nav="inquire"]::after {
 }
 
 .section-header h2 {
-  font-size: clamp(2.2rem, 4vw, 3.1rem);
-  margin: 12px 0 14px;
-  letter-spacing: -0.02em;
+  font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+  font-weight: 500;
+  margin: 10px 0 14px;
+  letter-spacing: -0.015em;
 }
 
 .section-header p {
