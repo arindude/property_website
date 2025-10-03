@@ -38,14 +38,20 @@ const revealNodes = document.querySelectorAll('.reveal');
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 if (!prefersReducedMotion && 'IntersectionObserver' in window) {
-  const observer = new IntersectionObserver((entries, obs) => {
+  const hideThreshold = 0.08;
+  const showThreshold = 0.18;
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting && entry.intersectionRatio >= showThreshold) {
         entry.target.classList.add('visible');
-        obs.unobserve(entry.target);
+        return;
+      }
+
+      if (!entry.isIntersecting || entry.intersectionRatio <= hideThreshold) {
+        entry.target.classList.remove('visible');
       }
     });
-  }, { threshold: 0.16 });
+  }, { threshold: [0, hideThreshold, showThreshold, 0.35, 0.6, 0.85, 1], rootMargin: '0px 0px -5% 0px' });
 
   revealNodes.forEach(node => observer.observe(node));
 } else {
