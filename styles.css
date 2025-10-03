@@ -217,11 +217,24 @@ body[data-page="inquire"] .nav-links a[data-nav="inquire"]::after {
 }
 
 .eyebrow {
-  letter-spacing: 0.38em;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  margin: 0 0 16px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: rgba(245, 246, 250, 0.7);
+  margin: 0 0 14px;
+}
+
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 1px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(245, 246, 250, 0.1), rgba(140, 157, 255, 0.65));
 }
 
 .hero-content h1 {
