@@ -34,13 +34,17 @@ jobs:
           paths=(
             "index.html"
             "styles.css"
+            "script.js"
+            "amenities.html"
+            "gallery.html"
+            "inquire.html"
+            "location.html"
+            "residences.html"
             "img/hero.jpg"
             "img/interior-1.jpg"
             "img/interior-2.jpg"
             "img/interior-3.jpg"
             "img/interior-4.jpg"
-            "static/css/style.css"
-            "static/js/site.js"
           )
           for p in "${paths[@]}"; do
             if [ ! -e "$p" ]; then
