@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquire | 83 Spaulding St</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a class="site-logo" href="index.html">83 Spaulding St</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a class="active" href="contact.html">Inquire</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>Let’s talk about your stay</h1>
+            <p class="lead">Share a few details and we’ll follow up with availability, pricing, and tours.</p>
+        </section>
+
+        <section class="contact-layout">
+            <div class="contact-card">
+                <h2>Send an inquiry</h2>
+                <form id="contact-form">
+                    <label for="name">Full name</label>
+                    <input id="name" name="name" type="text" required>
+
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your group, timing, and must-haves."></textarea>
+
+                    <button class="button primary" type="submit">Send message</button>
+                </form>
+                <p class="form-note">Submitting will open your email client with a drafted message. Update the address in the script if you prefer a different destination.</p>
+            </div>
+
+            <aside class="contact-details">
+                <h2>Contact info</h2>
+                <p><strong>Email:</strong> <a id="contact-email" href="mailto:rentals@83spaulding.com">rentals@83spaulding.com</a></p>
+                <p><strong>Phone:</strong> (413) 555-1234</p>
+                <p><strong>Address:</strong> 83 Spaulding Street, Amherst, MA</p>
+                <p>Private tours are available most weekdays and select weekends. Let us know what works for you.</p>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> 83 Spaulding St. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const contactEmail = 'rentals@83spaulding.com';
+        document.getElementById('contact-email').setAttribute('href', `mailto:${contactEmail}`);
+        document.getElementById('contact-email').textContent = contactEmail;
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            const subject = encodeURIComponent(`Rental inquiry from ${name || 'prospective tenant'}`);
+            const bodyLines = [
+                `Name: ${name}`,
+                `Email: ${email}`,
+                '',
+                'Message:',
+                message,
+            ];
+            const body = encodeURIComponent(bodyLines.join('\n'));
+
+            window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
+        });
+    </script>
+</body>
+</html>
