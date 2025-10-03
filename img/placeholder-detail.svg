@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1040" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grad-det" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12131c" />
+      <stop offset="100%" stop-color="#232633" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1040" fill="url(#grad-det)" />
+  <g fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2">
+    <path d="M320 220h960v600H320z" />
+    <path d="M400 300h800v440H400z" />
+    <path d="M400 520h800" />
+    <path d="M680 300v440" />
+  </g>
+  <g fill="rgba(255,255,255,0.7)">
+    <text x="420" y="360" font-size="56" font-family="'Inter','Helvetica Neue',sans-serif" letter-spacing="6">MATERIAL STORY</text>
+    <text x="420" y="430" font-size="40" font-family="'Inter','Helvetica Neue',sans-serif" fill="rgba(255,255,255,0.6)">
+      Oak · Mineral plaster · Matte black · Woven texture
+    </text>
+  </g>
+  <g opacity="0.45">
+    <circle cx="1220" cy="320" r="60" fill="rgba(140,157,255,0.22)" />
+    <circle cx="1220" cy="320" r="98" stroke="rgba(140,157,255,0.45)" stroke-width="6" fill="none" />
+  </g>
+</svg>
