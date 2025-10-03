@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery – 83 Spaulding</title>
+  <meta name="description" content="Immerse yourself in the 83 Spaulding gallery: hero living spaces, curated suites, and spa-inspired amenities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=mp" />
+</head>
+<body data-page="gallery">
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a class="brand" href="index.html" aria-label="83 Spaulding home">83 Spaulding</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <nav id="nav-menu" class="nav-links" aria-label="Primary">
+        <a data-nav="home" href="index.html">Home</a>
+        <a data-nav="residences" href="residences.html">Residences</a>
+        <a data-nav="amenities" href="amenities.html">Amenities</a>
+        <a data-nav="gallery" href="gallery.html">Gallery</a>
+        <a data-nav="location" href="location.html">Location</a>
+        <a data-nav="inquire" href="inquire.html">Inquire</a>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+    <section class="hero reveal" style="--hero-image: url('img/interior-1.jpg');">
+      <div class="hero-content">
+        <p class="eyebrow">Gallery</p>
+        <h1>Light, material, and movement in harmony.</h1>
+        <p class="lead">Browse the spaces that define 83 Spaulding—from hero living zones to quiet residential retreats and spa-inspired suites.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="inquire.html">Plan a private viewing</a>
+          <a class="button button-ghost" href="residences.html">Learn about the residences</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Visual story</p>
+          <h2>Explore the textures and tonal balance of each space.</h2>
+          <p>Every detail—lighting, material, furniture—was selected to feel refined yet timeless. Scroll through the vignettes and imagine your rhythm here.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="reveal">
+            <img src="img/hero.jpg" alt="Hero living room with sculpted seating and warm lighting" />
+            <figcaption>Great Room</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="img/interior-2.jpg" alt="Minimal kitchen with quartz island and integrated lighting" />
+            <figcaption>Kitchen Atelier</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="img/interior-3.jpg" alt="Bedroom with oak headboard, layered textiles, and ambient lighting" />
+            <figcaption>Private Suite</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="img/interior-4.jpg" alt="Spa bathroom with stone vanity and rainfall shower" />
+            <figcaption>Wellness Bath</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft reveal">
+      <div class="container split">
+        <div class="surface">
+          <p class="eyebrow">Atmosphere</p>
+          <h2>Tactility that feels calm, cinematic, and custom.</h2>
+          <p>Shadow and light are choreographed to shift throughout the day, highlighting natural textures and creating immersive moments wholly your own.</p>
+          <a class="link-arrow" href="amenities.html">See the amenity suite</a>
+        </div>
+        <figure class="surface reveal" aria-label="Ambient lighting feature wall">
+          <img src="img/og-image.jpg" alt="Lighting detail with gradient wash and sculptural wall feature" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container surface form-card">
+        <p class="eyebrow">Schedule</p>
+        <h2>Experience the gallery in person.</h2>
+        <p class="lead">We’ll align a private walkthrough and personalize the focus based on your priorities.</p>
+        <a class="button button-primary" href="inquire.html">Book your visit</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© <span id="year"></span> 83 Spaulding · Visuals captured for elevated living.</p>
+  </footer>
+
+  <script src="script.js?v=mp" defer></script>
+</body>
+</html>

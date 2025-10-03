@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Location – 83 Spaulding</title>
+  <meta name="description" content="Discover the Amherst neighborhood around 83 Spaulding—steps from UMass, cafés, and wellness destinations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=mp" />
+</head>
+<body data-page="location">
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a class="brand" href="index.html" aria-label="83 Spaulding home">83 Spaulding</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <nav id="nav-menu" class="nav-links" aria-label="Primary">
+        <a data-nav="home" href="index.html">Home</a>
+        <a data-nav="residences" href="residences.html">Residences</a>
+        <a data-nav="amenities" href="amenities.html">Amenities</a>
+        <a data-nav="gallery" href="gallery.html">Gallery</a>
+        <a data-nav="location" href="location.html">Location</a>
+        <a data-nav="inquire" href="inquire.html">Inquire</a>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+    <section class="hero reveal" style="--hero-image: url('img/og-image.jpg');">
+      <div class="hero-content">
+        <p class="eyebrow">Location</p>
+        <h1>A quiet enclave, perfectly balanced between campus and culture.</h1>
+        <p class="lead">83 Spaulding sits within a tree-lined neighborhood—an intentional retreat that keeps you close to movement, nourishment, and connection.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#map">View map</a>
+          <a class="button button-ghost" href="inquire.html">Plan your visit</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="map" class="section reveal">
+      <div class="container split">
+        <div class="surface">
+          <p class="eyebrow">Proximity</p>
+          <h2>Everything you need, within minutes.</h2>
+          <p>Essential destinations are just a short walk or bike ride away. The neighborhood is calm, but never disconnected.</p>
+          <ul class="card-grid" role="list">
+            <li class="card">
+              <h3>UMass Amherst</h3>
+              <p>5-minute drive · 9-minute bike</p>
+            </li>
+            <li class="card">
+              <h3>Downtown Amherst</h3>
+              <p>6-minute drive · local dining, arts, and coffee</p>
+            </li>
+            <li class="card">
+              <h3>Wellness circuit</h3>
+              <p>Local gyms, yoga studios, and running trails within 8 minutes.</p>
+            </li>
+            <li class="card">
+              <h3>Everyday essentials</h3>
+              <p>Trader Joe’s, Whole Foods Market, and cafés within 7 minutes.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="map-frame reveal" aria-label="Map of 83 Spaulding Street Amherst, MA">
+          <iframe title="Map of 83 Spaulding St Amherst MA" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=83%20Spaulding%20St%20Amherst%20MA&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft reveal">
+      <div class="container surface form-card">
+        <p class="eyebrow">Neighborhood insight</p>
+        <h2>We’ll curate the hotspots around your priorities.</h2>
+        <p class="lead">During your tour we’ll guide you through local favorites—study cafés, wellness studios, and weekend escapes tailored to how you unwind.</p>
+        <a class="button button-primary" href="inquire.html">Schedule a neighborhood tour</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© <span id="year"></span> 83 Spaulding · Positioned for balance.</p>
+  </footer>
+
+  <script src="script.js?v=mp" defer></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inquire – 83 Spaulding</title>
+  <meta name="description" content="Connect with 83 Spaulding to schedule a private walkthrough and explore availability tailored to your timeline." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=mp" />
+</head>
+<body data-page="inquire">
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a class="brand" href="index.html" aria-label="83 Spaulding home">83 Spaulding</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <nav id="nav-menu" class="nav-links" aria-label="Primary">
+        <a data-nav="home" href="index.html">Home</a>
+        <a data-nav="residences" href="residences.html">Residences</a>
+        <a data-nav="amenities" href="amenities.html">Amenities</a>
+        <a data-nav="gallery" href="gallery.html">Gallery</a>
+        <a data-nav="location" href="location.html">Location</a>
+        <a data-nav="inquire" href="inquire.html">Inquire</a>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+    <section class="hero reveal" style="--hero-image: url('img/interior-4.jpg');">
+      <div class="hero-content">
+        <p class="eyebrow">Inquire</p>
+        <h1>We’ll choreograph every next step with you.</h1>
+        <p class="lead">Share your move-in timeline and priorities—our team will coordinate availability, pricing, and a tailored walkthrough.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#form">Start the conversation</a>
+          <a class="button button-ghost" href="mailto:leasing@83spaulding.com">Email leasing@83spaulding.com</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="form" class="section reveal">
+      <div class="container split">
+        <div class="surface form-card">
+          <p class="eyebrow">Private viewing</p>
+          <h2>Tell us how to make your visit effortless.</h2>
+          <form name="inquiry" method="post" data-netlify="true">
+            <input type="hidden" name="form-name" value="inquiry" />
+            <div class="form-grid">
+              <div>
+                <label for="name">Full name</label>
+                <input id="name" name="name" autocomplete="name" required />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" />
+              </div>
+              <div>
+                <label for="move-in">Target move-in</label>
+                <input id="move-in" name="move-in" type="month" />
+              </div>
+              <div class="full">
+                <label for="message">Tell us about your group</label>
+                <textarea id="message" name="message" rows="6" placeholder="Programs, priorities, ideal timeline"></textarea>
+              </div>
+            </div>
+            <button class="button button-primary" type="submit">Submit inquiry</button>
+            <p class="disclaimer">Expect a response within one business day. We’ll align tour timing, availability, and next steps.</p>
+          </form>
+        </div>
+        <div class="surface form-card">
+          <p class="eyebrow">Direct contact</p>
+          <h2>Prefer to connect now?</h2>
+          <p>Call <a href="tel:+14135551234">(413) 555-1234</a> or email <a href="mailto:leasing@83spaulding.com">leasing@83spaulding.com</a>. Weekday visits and select weekend appointments are available.</p>
+          <div class="badge-row">
+            <span class="badge">Virtual tours by request</span>
+            <span class="badge">Flexible lease terms</span>
+            <span class="badge">Local ownership</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© <span id="year"></span> 83 Spaulding · Let’s craft your next chapter.</p>
+  </footer>
+
+  <script src="script.js?v=mp" defer></script>
+</body>
+</html>
